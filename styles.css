@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@300&display=swap");
+body {
+  font-size: 14px;
+  background-color: hsl(30, 38%, 92%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.title {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 25px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  margin-top: 2%;
+  width: 100%;
+  margin-left: 10%;
+  display: inline-block;
+}
+
+.image {
+  width: 100%;
+  margin-top: 5%;
+  margin-left: 0%;
+}
+img {
+  width: 100%;
+  height: auto;
+  margin-left: 10%;
+  border-radius: 8px;
+}
+
+.price1 {
+  display: inline-block;
+}
+
+.price2 {
+  margin-left: 4%;
+  display: inline-block;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  line-height: 30px;
+}
+
+h1 {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+}
+.btn > div {
+  margin-top: auto;
+  margin-bottom: auto;
+  color: white;
+}
+.btn > svg {
+  margin: 5% 3%;
+}
+button {
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(10, 98, 68);
+  width: 210px;
+  height: 40px;
+  font-size: 15px;
+  text-align: center;
+  border-radius: 8px;
+  border: none;
+}
+button:hover {
+  background-color: rgb(23, 149, 103);
+}
+@media screen and (max-width: 480px) and (orientation: portrait) {
+  .container {
+    display: block;
+  }
+
+  .title {
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 35px;
+    font-size: 17;
+  }
+  img {
+    width: 100%;
+    height: 80%;
+    margin-left: 0%;
+    margin-top: 0%;
+    clip-path: inset(100px 0px 100px 0px);
+    border-radius: 0%;
+  }
+  h1 {
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 50px;
+    margin-top: 0px;
+  }
+  .content {
+    margin-top: -21%;
+    margin-left: 2%;
+  }
+  button {
+    width: 280px;
+    height: 50px;
+    font-size: 20px;
+
+    margin-top: 20px;
+  }
+  .price1 {
+    margin-top: 10px;
+  }
+  p {
+    font-size: 17px;
+    margin-top: 0%;
+  }
+}
+@media screen and (700px>=width>=481px) {
+  .title {
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 17px;
+    font-size: 10;
+  }
+  h1 {
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  p {
+    line-height: 16px;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+  .price1 {
+    margin-top: 0%;
+  }
+}
+
+/*
+320px — 480px: Mobile devices.
+481px — 768px: iPads, Tablets.
+769px — 1024px: Small screens, laptops.
+1025px — 1200px: Desktops, large screens.
+1201px and more — Extra large screens, TV.
+*/
